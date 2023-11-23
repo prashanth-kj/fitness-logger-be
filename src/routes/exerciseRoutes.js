@@ -10,7 +10,6 @@ router.get('/cardio/:id',Auth.validate,cardioController.getCardioById);
 router.delete('/cardio/:id',cardioController.deleteCardioById);
 
 
-
 router.post('/resistance',Auth.validate,resistanceController.createResistance);
 router.get('/resistance',Auth.validate,resistanceController.getResistanceByUserId);
 router.get('/resistance/:id',Auth.validate,resistanceController.getResistancebyId);
